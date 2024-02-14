@@ -35,6 +35,17 @@ cd Telegram-Simple-Verification-Bot
 pip install -r requirements.txt
 ```
 
+### 指令
+```
+/start - 在验证前所要给予给被验证者的一些提醒。
+```
+```
+/verify - 被验证者将会有 5 次机会通过发送非命令消息进行验证。
+```
+```
+/deleta {link} - 匹配指定用户名的发送者可以删除由机器人生成的链接。
+```
+
 ### 配置
 
 编辑 `configs.py` 文件:
@@ -54,7 +65,7 @@ group_id = -1000000000000
 # 链接申请最大数量
 verified_max = 10
 ```
-04. 你可以配置自己的 Telegram 用户名，以便在一些时候，使用 `/delete {链接}` 来删除一些由机器人生成的链接。`
+04. 你可以配置自己的 Telegram 用户名，以便在一些时候，使用 `/delete {link}` 来删除一些由机器人生成的链接。`
 ```
 # 你的用户名
 admin_username = "Aleph_Studio"
@@ -97,9 +108,36 @@ lock = "首先这是个非常有趣的问题？（两个汉字）"
 # 答案
 key = [ "有趣", "答案" ] # [ "答案A", "答案B", ... ]
 ```
+
 ### 运行
-你可以在项目根目录下输入以下命令来使用这个机器人。在成功运行后，控制台不会有任何提示。
+在项目目录下使用命令来运行这个机器人。成功运行后，控制台不会有任何提示。
 ```
 python main.py
 ```
-然后你可以对机器人发送 `/start` 来检查是否运行成功。
+你可以对机器人发送 `/start` 来检查是否运行成功。
+
+### 配置黑名单
+示例：
+```
+{
+    "100000000":{
+        "id":1,
+        "username":"Aleph_Studio",
+        "first_name":"AhAlpha",
+        "last_name":null,
+        "verify_num":4,
+        "k":{
+            "1":"a"
+        },
+[*]     "verified":true,
+[+]     "isban":"原因",
+    }
+}
+```
+## 有关于更多配置参考
+
+[**Telegram-Markdown-Html-Deeplink-Guide**](https://github.com/dingdangcats/Telegram-Markdown-Html-Deeplink-Guide)
+
+[**python-telegram-bot**](https://docs.python-telegram-bot.org/)
+
+__
