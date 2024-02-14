@@ -130,7 +130,7 @@ python main.py
             "1":"a"
         },
 [*]     "verified":true,
-[+]     "isban":"原因",
+[+]     "isban":"封禁原因"
     }
 }
 ```
