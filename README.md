@@ -134,6 +134,29 @@ python main.py
     }
 }
 ```
+
+## 数据结构
+```
+{
+    "verified_num":0, // 通过验证总数
+    "fail_num":0, // 失败验证总数
+    "100000000":{ // 被验证者标识
+        "id":1, // 被验证者序号
+        "username":"Aleph_Studio", // 被验证者名称
+        "first_name":"AhAlpha",
+        "last_name":null,
+        "verify_num":3, // 剩余可验证次数
+        "k":{ // 错误回答
+            "1":"a",
+            "2":"b"
+        },
+        "verified":true, // 是否通过验证
+        "link":"https://t.me/+...", // 专属链接
+        "isban":"" // 被禁止
+    }
+}
+```
+
 ## 有关于更多配置参考
 
 [**Telegram-Markdown-Html-Deeplink-Guide**](https://github.com/dingdangcats/Telegram-Markdown-Html-Deeplink-Guide)
