@@ -72,7 +72,7 @@ admin_username = "Aleph_Studio"
 # 用于移除由机器人生成的邀请链接 (非必要)
 # 用法 '/delete {链接}'
 ```
-05. 是否记录消息，将会在项目根目录生成 `messages.log` 文件以记录机器人所收到的消息记录，将 `islogmessages = True` 里的 `True` 为 `False` 关闭 或 `True` 启用。
+05. 是否记录消息，将会在项目根目录生成 `messages.log` 文件以记录机器人所收到的消息记录，将 `islogmessages = True` 里的 `True` 替换为 `False` 关闭 或 `True` 启用。
 ```
 # 是否记录消息
 islogmessages = True
