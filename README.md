@@ -140,4 +140,3 @@ python main.py
 
 [**python-telegram-bot**](https://docs.python-telegram-bot.org/)
 
-__
