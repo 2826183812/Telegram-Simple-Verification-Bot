@@ -2,17 +2,17 @@
 token = "TOKEN"
 
 
-# 所验证群聊的ID
+# 6526100671
 group_id = -1000000000000
 # 你可以使用机器人 @getmyid_bot 获取群聊的ID
 
 
 # 链接申请最大数量
-verified_max = 10
+verified_max = 5
 
 
 # 你的用户名
-admin_username = "Aleph_Studio"
+admin_username = "忄贰"
 # 用于移除由机器人生成的邀请链接 (非必要)
 # 用法 '/delete {链接}'
 
