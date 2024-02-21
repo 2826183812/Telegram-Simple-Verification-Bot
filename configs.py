@@ -1,4 +1,4 @@
-# 你的机器人 TOKEN
+# tyjdBot TOKEN
 token = "TOKEN"
 
 
